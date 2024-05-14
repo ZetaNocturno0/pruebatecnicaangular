@@ -1,0 +1,30 @@
+<div>
+    <h2>Consulta de Empleados</h2>
+    <form>
+      <div class="form-group">
+        <label for="filtroNombre">Buscar por Nombre:</label>
+        <input type="text" id="filtroNombre" class="form-control" placeholder="Ingrese el nombre" [(ngModel)]="filtroNombre">
+      </div>
+
+      <button type="button" class="btn btn-primary" (click)="filtrar()">Buscar</button>
+    </form>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>País</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let empleado of empleados">
+          <td>{{ empleado.primerNombre }}</td>
+          <td>{{ empleado.primerApellido }}</td>
+          <td>{{ empleado.paisEmpleo }}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,14 @@
+<div class="container">
+    <h2>Detalles del Empleado</h2>
+    <div *ngIf="empleado">
+        <p><strong>Primer Apellido:</strong> {{ empleado.primerApellido }}</p>
+        <p><strong>Segundo Apellido:</strong> {{ empleado.segundoApellido }}</p>
+        <p><strong>Primer Nombre:</strong> {{ empleado.primerNombre }}</p>
+        <p><strong>Otros Nombres:</strong> {{ empleado.otrosNombres }}</p>
+        <p><strong>País de Empleo:</strong> {{ empleado.paisEmpleo }}</p>
+        <p><strong>Tipo de Identificación:</strong> {{ empleado.tipoIdentificacion }}</p>
+        <p><strong>Número de Identificación:</strong> {{ empleado.numeroIdentificacion }}</p>
+        <p><strong>Área:</strong> {{ empleado.area }}</p>
+        <!-- Agregar otros campos si es necesario -->
+    </div>
+</div>
